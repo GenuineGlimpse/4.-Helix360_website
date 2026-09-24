@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiry - Helix 360</title>
+</head>
+<body>
+<header>
+<h1>HELIX 360 CONSTRUCTION PROJECTS</h1>
+<nav>
+<a href="index.html">Home</a> |
+<a href="about.html">About Us</a> |
+<a href="services.html">Services</a> |
+<a href="enquiry.html">Enquiry</a> |
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+<h2>Request a Quote / Enquiry</h2>
+<p>Fill in the form below and we will contact you within 24 hours.</p>
+
+<!-- Enquiry form with client-side validation -->
+<form action="#" method="post">
+<label for="name">Full Name:</label><br>
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="phone">Phone Number:</label><br>
+<input type="tel" id="phone" name="phone" required><br><br>
+
+<label for="project">Project Type:</label><br>
+<select id="project" name="project" required>
+<option value="">Select Project</option>
+<option value="new_build">New Building</option>
+<option value="renovation">Renovation</option>
+<option value="commercial">Commercial</option>
+<option value="government">Government Tender</option>
+</select><br><br>
+
+<label for="budget">Estimated Budget:</label><br>
+<select id="budget" name="budget">
+<option value="under_100k">Under R100k</option>
+<option value="100k_500k">R100k - R500k</option>
+<option value="500k_plus">R500k+</option>
+</select><br><br>
+
+<label for="message">Your Vision / Message:</label><br>
+<textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+<button type="submit">Submit Enquiry</button>
+</form>
+</main>
+
+<footer>
+<p>&copy; 2026 Helix 360 Construction Projects</p>
+</footer>
+</body>
+</html>
