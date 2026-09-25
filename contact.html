@@ -1,58 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - Helix 360</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<title>Contact - HELIX 360</title>
+<style>
+.contact-wrapper{display:flex;min-height:calc(100vh - 70px);}
+.contact-left{width:48%;background:#fdf8f0;position:relative;padding:50px 40px;overflow:hidden}
+.contact-left::before{content:"";position:absolute;inset:0;background:url('../images/house1.jpg') center/cover;opacity:0.06;z-index:1}
+.contact-left *{position:relative;z-index:2}
+.dropcap-G::first-letter{float:left;font-size:120px;line-height:0.8;font-family:'Times New Roman',serif;color:#c78a5a;margin-right:8px;font-weight:700}
+.contact-right{width:52%;background:#fffef9;padding:40px 35px;border-left:1px solid rgba(0,0,0,0.06)}
+.gold-label{color:#a67c4e;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.icon-circle{width:36px;height:36px;background:#c78a5a;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:16px}
+.quick-input{width:100%;padding:12px;border:1px solid #d9c9a8;border-radius:6px;margin:6px 0 14px;background:#fffef9}
+@media(max-width:768px){.contact-wrapper{flex-direction:column}.contact-left,.contact-right{width:100%}}
+</style>
 </head>
 <body>
-<header>
-<h1>HELIX 360 CONSTRUCTION PROJECTS</h1>
-<nav>
-<a href="index.html">Home</a> |
-<a href="about.html">About Us</a> |
-<a href="services.html">Services</a> |
-<a href="enquiry.html">Enquiry</a> |
-<a href="contact.html">Contact</a>
-</nav>
-</header>
+<div class="top-nav"><div class="logo">HELIX 360</div><ul><li><a href="index.html">HOME</a></li><li><a href="about.html">ABOUT</a></li><li><a href="services.html">SERVICES</a></li><li><a href="enquiry.html">ENQUIRY</a></li><li><a href="contact.html" class="active">CONTACT</a></li></ul></div>
 
-<main>
-<h2>Contact Us</h2>
-<section>
-<h3>Contact Details</h3>
-<p><strong>Managing Director:</strong> Jabulani Collen Masombuka</p>
-<p><strong>Cell:</strong> 082 545 0881 / 076 945 3290 / 076 751 4600</p>
-<p><strong>Email:</strong> helix360.cp@gmail.com / jabulanicollen81@gmail.com</p>
-<p><strong>Physical Address:</strong> Bokfontein B127, Brits, 0250</p>
-<p><strong>Postal Address:</strong> PO BOX 759, Hartbeespoort, 0216</p>
-<p><strong>Reg No:</strong> 2015/157951/07 | VAT No: 9992765157</p>
-</section>
+<div class="contact-wrapper">
 
-<section>
-<h3>Our Locations</h3>
-<p>Location 1: Bokfontein B127, Brits (Main Office)</p>
-<p>Location 2: Sunway 759, Hartbeespoort, 0216</p>
-<!-- Map placeholder - Part 3 will embed Google Maps -->
-<p>[Google Map will be embedded in Part 3]</p>
-</section>
+<!-- LEFT - DROP CAPS & DETAILS -->
+<div class="contact-left">
+<p style="color:#c78a5a;font-size:11px;letter-spacing:3px">EST. 2015 • PREMIUM BUILDERS</p>
+<h1 class="dropcap-G" style="font-family:'Times New Roman',serif;font-weight:400;color:#0a2e33;font-size:54px;line-height:1;margin-top:20px">et in touch</h1>
+<p style="font-style:italic;color:#444;margin-top:15px;line-height:1.6">We would love to hear from you. Reach out for consultations, project inquiries, or bespoke construction solutions.</p>
 
-<section>
-<h3>Quick Contact Form</h3>
-<form action="#" method="post">
-<label for="cname">Name:</label><br>
-<input type="text" id="cname" name="cname" required><br><br>
-<label for="cemail">Email:</label><br>
-<input type="email" id="cemail" name="cemail" required><br><br>
-<label for="cmessage">Message:</label><br>
-<textarea id="cmessage" name="cmessage" rows="4" required></textarea><br><br>
-<button type="submit">Send Message</button>
+<br><br>
+<p class="gold-label">Managing Director</p>
+<h2 style="font-family:'Times New Roman',serif;color:#0a2e33;font-size:28px;font-weight:400;margin:5px 0 20px">Jabulani Collen Masombuka</h2>
+
+<div style="display:flex;gap:14px;margin:14px 0">
+<div class="icon-circle">📞</div>
+<div><p class="gold-label">Phone</p><p style="font-size:14px">082 545 0881 / 078 945 3290 / 076 751 4600</p></div>
+</div>
+
+<div style="display:flex;gap:14px;margin:14px 0">
+<div class="icon-circle">✉️</div>
+<div><p class="gold-label">Email</p><p style="font-size:13px">helix360.cp@gmail.com<br>jabulanicollen81@gmail.com</p></div>
+</div>
+
+<div style="display:flex;gap:14px;margin:14px 0">
+<div class="icon-circle">📍</div>
+<div><p class="gold-label">Physical Address</p><p style="font-size:14px">Bokfontein B127, Brits, 0250</p></div>
+</div>
+
+<div style="display:flex;gap:14px;margin:14px 0">
+<div class="icon-circle">📮</div>
+<div><p class="gold-label">Postal Address</p><p style="font-size:14px">PO BOX 759, Hartbeespoort, 0216</p><p style="font-size:11px;color:#777;margin-top:4px">Reg No: 2015/157951/07 | VAT No: 9992765157</p></div>
+</div>
+
+<div style="margin-top:30px;border-top:1px solid rgba(0,0,0,0.1);padding-top:15px;text-align:center">
+<p style="font-size:12px;letter-spacing:1px">Office Hours: Mon - Fri • 08:00 - 17:00</p>
+<p style="font-size:11px;color:#c78a5a;margin-top:4px">Bela-Bela • Brits • Available Nationwide</p>
+</div>
+</div>
+
+<!-- RIGHT - QUICK CONTACT + MAP -->
+<div class="contact-right">
+<h2 style="font-family:'Times New Roman',serif;font-size:38px;color:#0a2e33;font-weight:400">Quick Contact</h2>
+<p style="font-size:13px;color:#555;margin:8px 0 20px">Send us a message and our team will respond within 24 hours.</p>
+
+<form>
+<p class="gold-label">Your Name</p>
+<input type="text" class="quick-input" placeholder="Enter your full name" required>
+
+<p class="gold-label">Email Address</p>
+<input type="email" class="quick-input" placeholder="your.email@example.com" required>
+
+<p class="gold-label">Message</p>
+<textarea class="quick-input" style="height:100px" placeholder="Tell us about your project..."></textarea>
+
+<button type="submit" style="background:#c78a5a;color:white;border:none;padding:12px 30px;border-radius:6px;font-weight:700;letter-spacing:1px;margin-top:10px;cursor:pointer;width:100%">SEND MESSAGE</button>
 </form>
-</section>
-</main>
 
-<footer>
-<p>&copy; 2026 Helix 360 Construction Projects</p>
+<div style="margin-top:30px">
+<h3 style="font-family:'Times New Roman',serif;color:#0a2e33;font-weight:400">Our Locations</h3>
+
+<!-- GOOGLE MAP EMBED - Part 3 requirement -->
+<div style="margin-top:12px;border-radius:10px;overflow:hidden;border:1px solid #e9ddc2">
+<iframe src="https://maps.google.com/maps?q=Bokfontein%20B127,%20Brits&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0" loading="lazy"></iframe>
+</div>
+
+<div style="display:flex;justify-content:space-between;margin-top:10px;font-size:12px">
+<div><strong>Location 1:</strong> Bokfontein B127, Brits (Main Office)</div>
+</div>
+<div style="font-size:12px;margin-top:4px"><strong>Location 2:</strong> Sunway 759, Hartbeespoort, 0216</div>
+
+<p style="font-size:11px;margin-top:12px;text-align:center">
+<a href="https://maps.google.com/?q=Bokfontein+B127+Brits" target="_blank" style="color:#0a2e33;text-decoration:underline">Bokfontein B127, Brits • View on Google Maps →</a>
+</p>
+</div>
+
+<footer style="margin-top:25px;font-size:10px;color:#999;text-align:center;border-top:1px solid #eee;padding-top:12px">
+© 2026 HELIX 360 CONSTRUCTION • Licensed • Insured • CIDB & NHBRC Registered
 </footer>
+</div>
+
+</div>
 </body>
 </html>
